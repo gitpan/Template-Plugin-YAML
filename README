@@ -1,4 +1,4 @@
-README for Template::Plugin::YAML 1.21
+README for Template::Plugin::YAML 1.22
 
 =head1 NAME
 
@@ -10,6 +10,9 @@ Template::Plugin::YAML - Plugin interface to YAML
 
     [% YAML.dump(variable) %]
     [% YAML.dump_html(variable) %]
+    [% value = YAML.undump(yaml_string) %]
+    [% YAML.dumpfile(filename, variable) %]
+    [% value = YAML.undumpfile(filename) %]
 
 
 =head1 DEPENDENCIES
@@ -35,14 +38,20 @@ What changed over the last 3 revisions
 
 =over
 
+=item 1.22	29th August, 2003
+
+	Adds undump, dumpfile, undumpfile as provided by Randal L. Schwartz
+
+
 =item 1.21	30th July, 2003
 
 	Initial CPAN release
 =back
 
-=head1 AUTHOR
+=head1 AUTHORS
 
-Richard Clamp <richardc@unixbeard.net>
+Richard Clamp <richardc@unixbeard.net>, with undump, undumpfile, and
+dumpfile implementation by Randal L. Schwartz <merlyn@stonehenge.com>
 
 based on Simon Matthews' L<Template::Plugin::Dumper>
 
