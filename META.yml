@@ -1,0 +1,17 @@
+--- #YAML:1.0
+name: Template-Plugin-YAML
+version: 1.21
+license: perl
+distribution_type: module
+requires:
+  Template: 0
+  Test::More: 0
+  YAML: 0
+recommends: {}
+build_requires: {}
+conflicts: {}
+provides:
+  Template::Plugin::YAML:
+    file: lib/Template/Plugin/YAML.pm
+    version: 1.21
+generated_by: Module::Build version 0.19
