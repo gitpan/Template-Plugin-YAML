@@ -1,4 +1,4 @@
-README for Template::Plugin::YAML 1.22
+README for Template::Plugin::YAML
 
 =head1 NAME
 
@@ -15,28 +15,26 @@ Template::Plugin::YAML - Plugin interface to YAML
     [% value = YAML.undumpfile(filename) %]
 
 
-=head1 DEPENDENCIES
-
-This module has external dependencies on the following modules:
-
- Template
- Test::More
- YAML
-
 =head1 INSTALLATION
 
- perl Build.PL
- perl Build test
+ perl Makefile.PL
+ make test
 
 and if all goes well
 
- perl Build install
+ make install
 
 =head1 HISTORY
 
 What changed over the last 3 revisions
 
 =over
+
+=item 1.23    15th December, 2008
+
+        Fix the tests so we don't rely on golden output.  Should fix
+        most of the failing smoke cases.
+
 
 =item 1.22	29th August, 2003
 
@@ -57,7 +55,7 @@ based on Simon Matthews' L<Template::Plugin::Dumper>
 
 =head1 COPYRIGHT
 
-Copyright 2003 Richard Clamp All Rights Reserved.
+Copyright 2003, 2008 Richard Clamp All Rights Reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.

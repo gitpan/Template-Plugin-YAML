@@ -4,7 +4,7 @@ use Template::Plugin;
 use base 'Template::Plugin';
 use YAML qw(Dump Load DumpFile LoadFile);
 use vars qw($VERSION);
-$VERSION = 1.22;
+$VERSION = '1.23';
 
 =head1 NAME
 
@@ -137,7 +137,7 @@ based on Simon Matthews' L<Template::Plugin::Dumper>
 
 =head1 COPYRIGHT
 
-Copyright 2003 Richard Clamp All Rights Reserved.
+Copyright 2003, 2008 Richard Clamp All Rights Reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.

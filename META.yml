@@ -1,17 +1,13 @@
---- #YAML:1.0
-name: Template-Plugin-YAML
-version: 1.22
-license: perl
-distribution_type: module
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         Template-Plugin-YAML
+version:      1.23
+version_from: lib/Template/Plugin/YAML.pm
+installdirs:  site
 requires:
-  Template: 0
-  Test::More: 0
-  YAML: 0
-recommends: {}
-build_requires: {}
-conflicts: {}
-provides:
-  Template::Plugin::YAML:
-    file: lib/Template/Plugin/YAML.pm
-    version: 1.22
-generated_by: Module::Build version 0.20
+    Template:                      0
+    Test::More:                    0
+    YAML:                          0
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.17
